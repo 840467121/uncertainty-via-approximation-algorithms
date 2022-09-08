@@ -1,6 +1,6 @@
 
 ## Name
-# uncertainty-via-approximation-algorithms
+uncertainty-via-approximation-algorithms
 
 ## Introduction
 # The algorithm includes a 1+e approximation of the K-means classification algorithm and a truth discovery algorithm
