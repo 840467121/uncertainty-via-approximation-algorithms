@@ -6,7 +6,7 @@ uncertainty-via-approximation-algorithms
 The algorithm includes  1+ε approximation of the K-means classification algorithm and  truth discovery algorithm
 
 ### Summary
-
+![image](流程v3.jpg）
 #### input：
 P(Initial data set), csv
 #### key parameter：
