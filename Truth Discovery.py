@@ -184,8 +184,8 @@ def Simplex(P,C):
 
 
 if __name__ == '__main__':
-    P = pd.read_csv("50模型得分1.csv").values
-    dataframe = pd.read_csv("50模型得分1.csv",low_memory=False)
+    P = pd.read_csv("data.csv").values
+    dataframe = pd.read_csv("data.csv",low_memory=False)
     Plist = P.tolist()            
     e = 0.9
     K = 4
