@@ -3,12 +3,16 @@
 uncertainty-via-approximation-algorithms
 
 ## Introduction
-The algorithm includes a 1+e approximation of the K-means classification algorithm and a truth discovery algorithm
+The algorithm includes  1+ε approximation of the K-means classification algorithm and  truth discovery algorithm
 
-### Summary - 概要
+### Summary
 # input：
+P(Initial data set), csv
 # key parameter：
+ε, k
 # output：
+pstar(True value), csv
+w(Reliability),csv
 
 ### Features - 特性
 
