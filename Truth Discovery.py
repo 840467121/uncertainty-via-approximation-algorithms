@@ -115,7 +115,7 @@ def Simplex(P,C):
     for i in range(len(u)):
         U.append(u[i])               
     k = len(U)
-    n = 3 
+    n = 5 
     OriginalPoint = U
     Layer_PointNum = np.empty(n)
     Sum_PointNum = np.empty(n)
@@ -124,8 +124,8 @@ def Simplex(P,C):
     Sum_PointNum[0] = Layer_PointNum[0]
     Layer_PointNum[1] = Layer_PointNum[0] * (Layer_PointNum[0]-1)/2
     Layer_PointNum[2] = Layer_PointNum[0] * Layer_PointNum[1] + Layer_PointNum[1] * (Layer_PointNum[1]-1)/2
-    #Layer_PointNum[3] = Layer_PointNum[0] * Layer_PointNum[2] + Layer_PointNum[1] * Layer_PointNum[2] + Layer_PointNum[2] * (Layer_PointNum[2]-1)/2
-    #Layer_PointNum[4] = Layer_PointNum[0] * Layer_PointNum[3] + Layer_PointNum[1] * Layer_PointNum[3] + Layer_PointNum[2] * Layer_PointNum[3] + Layer_PointNum[3] * (Layer_PointNum[3]-1)/2
+    Layer_PointNum[3] = Layer_PointNum[0] * Layer_PointNum[2] + Layer_PointNum[1] * Layer_PointNum[2] + Layer_PointNum[2] * (Layer_PointNum[2]-1)/2
+    Layer_PointNum[4] = Layer_PointNum[0] * Layer_PointNum[3] + Layer_PointNum[1] * Layer_PointNum[3] + Layer_PointNum[2] * Layer_PointNum[3] + Layer_PointNum[3] * (Layer_PointNum[3]-1)/2
     for i in range (1,n):
         Sum_PointNum[i] = Sum_PointNum[i-1] + Layer_PointNum[i]
         if (i < n): 
@@ -163,7 +163,7 @@ def Simplex(P,C):
     pcindex = []
     W = []
     
-    for i in range(1,3):
+    for i in range(1,5):
         for j in range(0,len(pointindex[i-1])): 
             bIs = True
             p = 0
